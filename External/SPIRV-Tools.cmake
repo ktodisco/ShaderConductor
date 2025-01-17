@@ -1,7 +1,7 @@
 # Copyright (c) Microsoft Corporation. All rights reserved.
 # Licensed under the MIT License.
 
-set(SPIRV_Tools_REV "c341f7a6cd441d05ca1347ee39f2f03f32225c59")
+set(SPIRV_Tools_REV "321692686b64873ccf4972754e36185697993e21")
 
 UpdateExternalLib("SPIRV-Tools" "https://github.com/KhronosGroup/SPIRV-Tools.git" ${SPIRV_Tools_REV})
 
@@ -9,7 +9,7 @@ set(SPIRV_SKIP_EXECUTABLES ON CACHE BOOL "" FORCE)
 add_subdirectory(SPIRV-Tools EXCLUDE_FROM_ALL)
 foreach(target
     "core_tables" "enum_string_mapping" "extinst_tables"
-    "spirv-tools-pkg-config" "spirv-tools-shared-pkg-config"
+    "spirv-tools-pkg-config"
     "spirv-tools-build-version" "spirv-tools-header-DebugInfo"
     "SPIRV-Tools-link" "SPIRV-Tools-shared"
     "spirv-tools-header-OpenCLDebugInfo100" "spirv-tools-vimsyntax" "spv-tools-cldi100" "spv-tools-clspvreflection" "spv-tools-debuginfo" "spv-tools-spv-amd-gs"
