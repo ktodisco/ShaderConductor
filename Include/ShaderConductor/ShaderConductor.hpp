@@ -173,7 +173,7 @@ namespace ShaderConductor
             bool enable16bitTypes = false;               // Enable 16-bit types, such as half, uint16_t. Requires shader model 6.2+
             bool enableDebugInfo = false;                // Embed debug info into the binary
             bool disableOptimizations = false;           // Force to turn off optimizations. Ignore optimizationLevel below.
-            bool inheritCombinedSamplerBindings = false; // If textures and samplers are combined, inherit the binding of the texture
+            bool inheritCombinedSamplerBindings = true;  // If textures and samplers are combined, inherit the binding of the texture
 
             int optimizationLevel = 3; // 0 to 3, no optimization to most optimization
             ShaderModel shaderModel = {6, 0};
